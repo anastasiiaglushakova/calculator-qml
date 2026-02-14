@@ -35,13 +35,13 @@ cmake --build .
 ## 📁 Структура
 ```
 calculator-qml/
-├── CMakeLists.txt
-├── main.cpp
-├── calculator.qrc
-├── main.qml
-├── Calculator.qml
-├── SecretMenu.qml
+├── CMakeLists.txt          # Конфигурация сборки
+├── main.cpp                # Точка входа
+├── calculator.qrc          # Манифест ресурсов
+├── main.qml                # Корневой компонент
+├── Calculator.qml          # Основной экран калькулятора
+├── SecretMenu.qml          # Секретное меню
 └── components/
-    ├── KeypadButton.qml
-    └── LongPressButton.qml
+    ├── KeypadButton.qml    # Стандартная кнопка
+    └── LongPressButton.qml # Кнопка с долгим нажатием
 ```
