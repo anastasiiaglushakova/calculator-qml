@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Calculator.qml</file>
+        <file>SecretMenu.qml</file>
+        <file>components/KeypadButton.qml</file>
+        <file>components/LongPressButton.qml</file>
+    </qresource>
+</RCC>
