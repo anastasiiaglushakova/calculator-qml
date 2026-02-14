@@ -78,9 +78,9 @@ calculator-qml/
 ## 📸 Скриншоты
 
 ### Основной экран
-![Калькулятор1](screenshots/calculator-main1.png)
-![Калькулятор2](screenshots/calculator-main2.png)
-![Калькулятор3](screenshots/calculator-main3.png)
+![Калькулятор1](screenshots/main1.png)
+![Калькулятор2](screenshots/main2.png)
+![Калькулятор3](screenshots/main3.png)
 
 ### Секретное меню
 ![Секретное меню1](screenshots/secret1.png)
