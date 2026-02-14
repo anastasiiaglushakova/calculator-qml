@@ -1,0 +1,79 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build-linux:
+    name: Build on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '5.15.2'
+          modules: 'qtquickcontrols2'
+          setup-python: 'true'
+      
+      - name: Configure CMake
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+      
+      - name: Build
+        run: |
+          cd build
+          cmake --build .
+      
+      - name: Verify binary exists
+        run: test -f build/bin/calculator-qml
+
+  build-windows:
+    name: Build on Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '5.15.2'
+          modules: 'qtquickcontrols2'
+          setup-python: 'true'
+      
+      - name: Configure CMake
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+      
+      - name: Build
+        run: |
+          cd build
+          cmake --build .
+
+  build-macos:
+    name: Build on macOS
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '5.15.2'
+          modules: 'qtquickcontrols2'
+          setup-python: 'true'
+      
+      - name: Configure CMake
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+      
+      - name: Build
+        run: |
+          cd build
+          cmake --build .
