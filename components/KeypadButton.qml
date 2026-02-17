@@ -11,6 +11,7 @@ Rectangle {
     property int textSize: 24
     
     property alias text: label.text
+    property string iconSource: ""
     
     signal clicked()
 
@@ -19,9 +20,20 @@ Rectangle {
     radius: btnSize / 2
     color: mouseArea.pressed ? pressedColor : bgColor
 
+    Image {
+        id: icon
+        anchors.centerIn: parent
+        source: root.iconSource
+        width: 32
+        height: 32
+        fillMode: Image.PreserveAspectFit
+        visible: root.iconSource !== ""
+    }
+
     Text {
         id: label
         anchors.centerIn: parent
+        visible: root.iconSource === ""
         
         font.family: "Open Sans"
         font.weight: Font.DemiBold
