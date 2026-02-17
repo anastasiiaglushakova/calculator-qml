@@ -42,7 +42,24 @@ calculator-qml/
 ├── main.qml                # Корневой компонент
 ├── Calculator.qml          # Основной экран калькулятора
 ├── SecretMenu.qml          # Секретное меню
-└── components/
+├── README.md               # Документация
+├── .gitignore              # Исключения для Git
+├── assets/                 # Векторные иконки операций (из Figma)
+│   ├── bkt.svg             # Скобки ()
+│   ├── division.svg        # Деление ÷
+│   ├── equal.svg           # Равно =
+│   ├── minus.svg           # Вычитание −
+│   ├── multiplication.svg  # Умножение ×
+│   ├── percent.svg         # Процент %
+│   ├── plus_minus.svg      # Смена знака +/-
+│   └── plus.svg            # Сложение +
+├── screenshots/            # Скриншоты интерфейса
+│   ├── main1.png
+│   ├── main2.png
+│   ├── main3.png
+│   ├── secret1.png
+│   └── secret2.png
+└── components/             # Переиспользуемые компоненты
     ├── KeypadButton.qml    # Стандартная кнопка
     └── LongPressButton.qml # Кнопка с долгим нажатием
 ```

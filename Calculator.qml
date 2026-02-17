@@ -288,32 +288,31 @@ Item {
             columnSpacing: 22
             rowSpacing: 22
 
-            KeypadButton { iconSource: "qrc:/assets/bkt.svg";       textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("()") }
-            KeypadButton { iconSource: "qrc:/assets/plus_minus.svg"; textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("+/-") }
-            KeypadButton { iconSource: "qrc:/assets/percent.svg";   textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: percent() }
-            KeypadButton { iconSource: "qrc:/assets/division.svg";  textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("÷") }
+            KeypadButton { iconSource: "qrc:/assets/bkt.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("()") }
+            KeypadButton { iconSource: "qrc:/assets/plus_minus.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("+/-") }
+            KeypadButton { iconSource: "qrc:/assets/percent.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: percent() }
+            KeypadButton { iconSource: "qrc:/assets/division.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("÷") }
 
             KeypadButton { text: "7"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("7") }
             KeypadButton { text: "8"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("8") }
             KeypadButton { text: "9"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("9") }
-            KeypadButton { iconSource: "qrc:/assets/multiplication.svg"; textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("×") }
+            KeypadButton { iconSource: "qrc:/assets/multiplication.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("×") }
 
             KeypadButton { text: "4"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("4") }
             KeypadButton { text: "5"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("5") }
             KeypadButton { text: "6"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("6") }
-            KeypadButton { iconSource: "qrc:/assets/minus.svg"; textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("−") }
+            KeypadButton { iconSource: "qrc:/assets/minus.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("−") }
 
             KeypadButton { text: "1"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("1") }
             KeypadButton { text: "2"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("2") }
             KeypadButton { text: "3"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("3") }
-            KeypadButton { iconSource: "qrc:/assets/plus.svg"; textSize: 28; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("+") }
+            KeypadButton { iconSource: "qrc:/assets/plus.svg"; bgColor: "#0889A6"; pressedColor: "#F7E425"; textColor: "#FFFFFF"; onClicked: processKey("+") }
 
             KeypadButton { text: "C"; bgColor: "#f5a9a2"; pressedColor: "#F25E5E"; textColor: "#FFFFFF"; onClicked: processKey("C") }
             KeypadButton { text: "0"; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey("0") }
             KeypadButton { text: "."; bgColor: "#B0D1D8"; pressedColor: "#04BFAD"; textColor: "#024873"; onClicked: processKey(".") }
             LongPressButton {
                 iconSource: "qrc:/assets/equal.svg"
-                text: "="
                 longPressDuration: 4000
                 onLongPressActivated: activateCodeEntry()
                 onRegularClick: calc()
